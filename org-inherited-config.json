@@ -3,11 +3,5 @@
   "extends": ["config:best-practices", "schedule:earlyMondays", "group:all"],
   "automerge": true,
   "automergeType": "pr",
-  "group": {
-    "branchTopic": "{{{groupSlug}}}",
-    "commitMessageTopic": "{{{groupName}}}"
-  },
-  "lockFileMaintenance": {
-    "enabled": true
-  }
+  "lockFileMaintenance": { "enabled": true }
 }

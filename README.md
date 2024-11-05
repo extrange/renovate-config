@@ -2,10 +2,9 @@
 
 Used by default for all my repos.
 
-Main considerations:
-
-- Automerging via PR, once a week, to reduce noise, but still give me visibility. If too noisy consider using `automergeType: branch` instead (but setup tests first)
+- Run on early mondays, to reduce noise. If too noisy consider using `automergeType: branch` instead (but setup tests first)
+- Automerge all major/minor/patch updates if tests pass
 - Pin dependencies to avoid [silent problems]
-- Group all updates together, while overriding `lockFileMaintenance` to be `true`
+- Group all non-major updates together, while overriding `lockFileMaintenance` to be `true`
 
 [silent problems]: https://docs.renovatebot.com/dependency-pinning/#upgrading-pinned-versions
