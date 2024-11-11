@@ -8,7 +8,7 @@ Usage:
 // renovate.json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["renovate-config:exceptMajor"]
+  "extends": ["extrange/renovate-config:exceptMajor"]
 }
 ```
 
