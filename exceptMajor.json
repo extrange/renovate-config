@@ -3,24 +3,23 @@
   "extends": ["config:best-practices", "schedule:earlyMondays"],
   "packageRules": [
     {
-      "groupName": "all non-major dependencies",
+      "groupName": "all non-major updates",
       "groupSlug": "all-minor-patch",
       "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
-      "automerge": true
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "lockFileMaintenance",
+        "pin",
+        "pinDigest",
+        "digest"
+      ],
+      "automerge": true,
+      "automergeType": "branch"
     }
   ],
-  "pinDigest": { "automerge": true, "automergeType": "branch" },
-  "digest": {
-    "groupName": "all digests",
-    "groupSlug": "all-digest-updates",
-    "automerge": true,
-    "automergeType": "branch"
-  },
   "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true,
-    "automergeType": "branch"
+    "enabled": true
   },
   "timezone": "Asia/Singapore"
 }
