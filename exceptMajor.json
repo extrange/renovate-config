@@ -14,12 +14,12 @@
         "pinDigest",
         "digest"
       ],
-      "automerge": true,
-      "automergeType": "branch"
+      "automerge": true
     }
   ],
   "lockFileMaintenance": {
     "enabled": true
   },
+  "automergeType": "pr",
   "timezone": "Asia/Singapore"
 }
