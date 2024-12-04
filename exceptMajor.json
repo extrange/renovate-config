@@ -11,6 +11,12 @@
     }
   ],
   "pinDigest": { "automerge": true, "automergeType": "branch" },
+  "digest": {
+    "groupName": "all digests",
+    "groupSlug": "all-digest-updates",
+    "automerge": true,
+    "automergeType": "branch"
+  },
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true,
