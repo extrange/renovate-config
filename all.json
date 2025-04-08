@@ -4,5 +4,6 @@
   "automerge": true,
   "automergeType": "branch",
   "lockFileMaintenance": { "enabled": true },
-  "timezone": "Asia/Singapore"
+  "timezone": "Asia/Singapore",
+  "updateNotScheduled": false
 }
