@@ -4,7 +4,6 @@
 	"packageRules": [
 		{
 			"groupName": "all non-major updates",
-			"groupSlug": "all-minor-patch",
 			"matchPackageNames": ["*"],
 			"matchUpdateTypes": [
 				"minor",
@@ -20,6 +19,11 @@
 			"matchPackageNames": ["python"],
 			"groupName": "python",
 			"automerge": false
+		},
+		{
+			"matchPackageNames": ["actions/checkout"],
+			"groupName": "actions/checkout",
+			"automerge": true
 		}
 	],
 	"lockFileMaintenance": {
