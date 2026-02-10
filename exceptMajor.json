@@ -1,36 +1,37 @@
 {
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:best-practices", "schedule:earlyMondays"],
-	"packageRules": [
-		{
-			"groupName": "all non-major updates",
-			"matchPackageNames": ["*"],
-			"matchUpdateTypes": [
-				"minor",
-				"patch",
-				"lockFileMaintenance",
-				"pin",
-				"pinDigest",
-				"digest"
-			],
-			"automerge": true
-		},
-		{
-			"matchPackageNames": ["python"],
-			"groupName": "python",
-			"automerge": false
-		},
-		{
-			"matchPackageNames": ["actions/checkout"],
-			"groupName": "actions/checkout",
-			"automerge": true
-		}
-	],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"automerge": true
-	},
-	"automergeType": "branch",
-	"timezone": "Asia/Singapore",
-	"updateNotScheduled": false
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "schedule": ["* * * * SUN"],
+  "packageRules": [
+    {
+      "groupName": "all non-major updates",
+      "matchPackageNames": ["*"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "lockFileMaintenance",
+        "pin",
+        "pinDigest",
+        "digest"
+      ],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["python"],
+      "groupName": "python",
+      "automerge": false
+    },
+    {
+      "matchPackageNames": ["actions/checkout"],
+      "groupName": "actions/checkout",
+      "automerge": true
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "automergeType": "branch",
+  "timezone": "Asia/Singapore",
+  "updateNotScheduled": false
 }
