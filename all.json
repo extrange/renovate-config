@@ -1,10 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", "group:all"],
-  "schedule": ["* * * * SUN"],
-  "automerge": true,
-  "automergeType": "branch",
-  "lockFileMaintenance": { "enabled": true },
-  "timezone": "Asia/Singapore",
-  "updateNotScheduled": false
+  "extends": [
+    "./base",
+    "group:all"
+  ],
+  "automerge": true
 }

@@ -1,11 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
-  "schedule": ["* * * * SUN"],
+  "extends": [
+    "./base"
+  ],
   "packageRules": [
     {
       "groupName": "all non-major updates",
-      "matchPackageNames": ["*"],
+      "matchPackageNames": [
+        "*"
+      ],
       "matchUpdateTypes": [
         "minor",
         "patch",
@@ -17,21 +20,18 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["python"],
+      "matchPackageNames": [
+        "python"
+      ],
       "groupName": "python",
       "automerge": false
     },
     {
-      "matchPackageNames": ["actions/checkout"],
+      "matchPackageNames": [
+        "actions/checkout"
+      ],
       "groupName": "actions/checkout",
       "automerge": true
     }
-  ],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "automerge": true
-  },
-  "automergeType": "branch",
-  "timezone": "Asia/Singapore",
-  "updateNotScheduled": false
+  ]
 }
