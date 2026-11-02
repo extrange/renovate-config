@@ -27,6 +27,20 @@
       "automerge": false
     },
     {
+      "description": "Digest-only python image bumps are safe to automerge; keep major/minor/tag changes manual.",
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "python"
+      ],
+      "matchUpdateTypes": [
+        "digest",
+        "pinDigest"
+      ],
+      "automerge": true
+    },
+    {
       "matchPackageNames": [
         "actions/checkout"
       ],
